@@ -1,0 +1,138 @@
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header, footer, nav, main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 0.2em;
+    }
+
+    .contact-info h4 {
+      margin: 0.2em 0;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: space-around;
+      list-style: none;
+      padding: 0;
+      background-color: #333;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      padding: 12px 15px;
+      display: block;
+    }
+
+    nav a:hover,
+    nav a.active {
+      background-color: #555;
+    }
+
+    .section-content {
+      background-color: white;
+      margin: 20px 0;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .skill-item {
+      background: #f0f0f0;
+      padding: 10px 15px;
+      border-radius: 6px;
+      position: relative;
+    }
+
+    .skill-tooltip {
+      display: none;
+      position: absolute;
+      background: #333;
+      color: #fff;
+      padding: 6px 10px;
+      border-radius: 5px;
+      font-size: 0.85em;
+      top: 120%;
+      left: 0;
+      white-space: nowrap;
+    }
+
+    .skill-item:hover .skill-tooltip {
+      display: block;
+    }
+
+    .soft-skills-list {
+      list-style: square inside;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2em;
+        text-align: center;
+      }
+
+      .contact-info {
+        text-align: center;
+      }
+
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav a {
+        width: 100%;
+        text-align: center;
+      }
+
+      .skills-grid {
+        flex-direction: column;
+      }
+
+      .section-content {
+        padding: 15px;
+      }
+
+      footer {
+        text-align: center;
+        padding: 10px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      body {
+        font-size: 0.95em;
+      }
+
+      header, main, footer {
+        padding: 15px;
+      }
+
+      nav a {
+        padding: 10px;
+      }
+
+      .skill-item {
+        font-size: 0.95em;
+      }
+    }
